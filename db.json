@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Rolando Dicki",
+      "id": 2
+    },
+    {
+      "name": "Victoria Pfannerstill",
+      "id": 3
+    },
+    {
+      "name": "Wendy Schroeder",
+      "id": 4
+    },
+    {
+      "name": "Judith Stracke",
+      "id": 5
+    },
+    {
+      "name": "Stephanie Windler",
+      "id": 6
+    },
+    {
+      "name": "George Torp-Schmitt",
+      "id": 7
+    },
+    {
+      "name": "Kenny Wintheiser",
+      "id": 8
+    },
+    {
+      "name": "Austin Monahan Sr.",
+      "id": 9
+    },
+    {
+      "name": "Bradford Dibbert",
+      "id": 10
+    },
+    {
+      "name": "Suzanne Botsford",
+      "id": 11
+    }
+  ],
+  "albums": [],
+  "photos": []
+}
