@@ -11,3 +11,4 @@ export const store = configureStore({
 // from this file
 export * from './thunks/fetchUsers';
 export * from './thunks/addUser';
+export * from './thunks/removeUser';
