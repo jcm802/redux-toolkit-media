@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
-    },
-    {
       "name": "Rolando Dicki",
       "id": 2
     },
@@ -45,6 +41,27 @@
       "id": 14
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 100,
+      "title": "Rolandos camping trip",
+      "userId": 2
+    },
+    {
+      "userId": 2,
+      "title": "Sleek Fresh Mouse",
+      "id": 101
+    },
+    {
+      "userId": 2,
+      "title": "Ergonomic Steel Towels",
+      "id": 102
+    },
+    {
+      "userId": 2,
+      "title": "Generic Granite Mouse",
+      "id": 103
+    }
+  ],
   "photos": []
 }

@@ -2,7 +2,7 @@ import classNames from "classnames"
 
 interface SkeletonProps {
     times: number,
-    className: string,
+    className?: string,
 }
 
 export default function Skeleton({ times, className }: SkeletonProps) {

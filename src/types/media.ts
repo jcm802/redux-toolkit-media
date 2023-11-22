@@ -3,6 +3,12 @@ export interface User {
     name: string,
 }
 
+export interface Album {
+    id: number,
+    title: string,
+    userId: number,
+}
+
 export interface UserState {
     list: Array<User>,
     isLoading: boolean,
