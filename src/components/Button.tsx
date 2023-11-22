@@ -1,6 +1,20 @@
 import className from 'classnames';
 import { GoSync } from 'react-icons/go';
 
+interface IButtonProps {
+  children: any;
+  onClick: () => void;
+  primary?: boolean;
+  secondary?: boolean;
+  success?: boolean;
+  warning?: boolean;
+  danger?: boolean;
+  outline?: boolean;
+  rounded?: boolean;
+  loading: boolean | Error | ((arg: any) => void);
+  className?: string;
+}
+
 function Button({
   children,
   primary,
@@ -12,7 +26,7 @@ function Button({
   rounded,
   loading,
   ...rest
-}) {
+}: IButtonProps) {
   const classes = className(
     rest.className,
     'flex items-center px-3 py-1.5 border h-8',
@@ -34,14 +48,14 @@ function Button({
   );
 
   return (
-    <button disabled={loading} {...rest} className={classes}>
+    <button disabled={loading as boolean} {...rest} className={classes}>
       {loading ? <GoSync className='animate-spin' /> : children}
     </button>
   );
 }
 
 Button.propTypes = {
-  checkVariationValue: ({ primary, secondary, success, warning, danger }) => {
+  checkVariationValue: ({ primary, secondary, success, warning, danger }: IButtonProps) => {
     const count =
       Number(!!primary) +
       Number(!!secondary) +

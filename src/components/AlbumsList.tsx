@@ -5,6 +5,7 @@ import Skeleton from './Skeleton';
 import ExpandablePanel from './ExpandablePanel';
 import Button from './Button';
 import { Album } from '../types/media';
+import AlbumsListItem from './AlbumsListItem';
 
 interface IAlbumsListProps {
     user: User;
@@ -16,33 +17,22 @@ export default function AlbumsList({ user }: IAlbumsListProps) {
 
   let content;
   if (isLoading) {
-    content = <Skeleton times={3} />;
+    content = <Skeleton times={3} className='h-10 w-full' />;
   } else if (error) {
     content = <div>Error loading albums.</div>;
   } else {
     content = data.map((album: Album) => {
-      const header = <div>{album.title}</div>;
-      return <ExpandablePanel key={album.id} header={header}>
-        <>List of photos in the album</>
-      </ExpandablePanel>
+      return <AlbumsListItem key={album.id} album={album} />
     })
   }
 
   return (
     <div>
-      <div>
-        Albums for {user.name}
+      <div className='m-2 flex flex-row items-center justify-between'>
+        <h3 className='text-lg font-bold'>Albums for {user.name}</h3>
         <Button
           onClick={() => addAlbum(user)}
-          loading={isLoading}
-          primary={undefined} 
-          secondary={undefined}
-          success={undefined}
-          warning={undefined}
-          danger={undefined}
-          outline={undefined}
-          rounded={undefined}
-          className='mr-3'
+          loading={results.isLoading}
         >
           + Add Album
         </Button>

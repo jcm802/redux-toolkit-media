@@ -50,13 +50,6 @@ export default function UsersList() {
               <Button
                 onClick={handleUserAdd}
                 loading={isCreatingUser}
-                primary={undefined} 
-                secondary={undefined}
-                success={undefined}
-                warning={undefined}
-                danger={undefined}
-                outline={undefined}
-                rounded={undefined}
               >
                 + Add User
               </Button>

@@ -22,13 +22,6 @@ export default function UsersListItem({ user }: IUsersListItemProps ) {
     <Button
       onClick={handleClick}
       loading={isLoading}
-      primary={undefined} 
-      secondary={undefined}
-      success={undefined}
-      warning={undefined}
-      danger={undefined}
-      outline={undefined}
-      rounded={undefined}
       className='mr-3'
     >
       <GoTrash />
