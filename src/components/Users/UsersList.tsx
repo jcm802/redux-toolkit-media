@@ -34,7 +34,7 @@ export default function UsersList() {
 
   let content: JSX.Element | Array<JSX.Element>;
   if (isLoadingUsers) {
-    content = <Skeleton times={6} className="h-10 w-full" />;
+    content = <Skeleton times={6} className='h-10 w-full' />;
   } else if (Object.keys(loadingUsersError).length) {
     content = <div>Error fetching data</div>
   } else {
