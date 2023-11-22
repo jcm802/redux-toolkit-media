@@ -9,6 +9,12 @@ export interface Album {
     userId: number,
 }
 
+export interface Photo {
+    id: number,
+    url: string,
+    albumId: number,
+}
+
 export interface UserState {
     list: Array<User>,
     isLoading: boolean,

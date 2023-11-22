@@ -1,10 +1,8 @@
-import React from 'react';
-import { User } from '../types/media';
-import { useFetchAlbumsQuery, useAddAlbumMutation } from '../store';
-import Skeleton from './Skeleton';
-import ExpandablePanel from './ExpandablePanel';
-import Button from './Button';
-import { Album } from '../types/media';
+import { User } from '../../types/media';
+import { useFetchAlbumsQuery, useAddAlbumMutation } from '../../store';
+import Skeleton from '../Skeleton';
+import Button from '../Button';
+import { Album } from '../../types/media';
 import AlbumsListItem from './AlbumsListItem';
 
 interface IAlbumsListProps {
@@ -12,11 +10,11 @@ interface IAlbumsListProps {
 }
 
 export default function AlbumsList({ user }: IAlbumsListProps) {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
   const [ addAlbum, results ] = useAddAlbumMutation();
 
   let content;
-  if (isLoading) {
+  if (isFetching) {
     content = <Skeleton times={3} className='h-10 w-full' />;
   } else if (error) {
     content = <div>Error loading albums.</div>;
@@ -34,7 +32,7 @@ export default function AlbumsList({ user }: IAlbumsListProps) {
           onClick={() => addAlbum(user)}
           loading={results.isLoading}
         >
-          + Add Album
+          <>+ Add Album</>
         </Button>
       </div>
       <div>

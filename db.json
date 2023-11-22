@@ -21,10 +21,6 @@
       "id": 7
     },
     {
-      "name": "Austin Monahan Sr.",
-      "id": 9
-    },
-    {
       "name": "Bradford Dibbert",
       "id": 10
     },
@@ -43,11 +39,6 @@
   ],
   "albums": [
     {
-      "id": 100,
-      "title": "Rolandos camping trip",
-      "userId": 2
-    },
-    {
       "userId": 2,
       "title": "Sleek Fresh Mouse",
       "id": 101
@@ -59,19 +50,30 @@
     },
     {
       "userId": 2,
-      "title": "Generic Granite Mouse",
+      "title": "Unbranded Fresh Chips",
       "id": 103
-    },
-    {
-      "userId": 2,
-      "title": "Gorgeous Bronze Pants",
-      "id": 104
-    },
-    {
-      "userId": 2,
-      "title": "Awesome Wooden Chips",
-      "id": 105
     }
   ],
-  "photos": []
+  "photos": [
+    {
+      "albumId": 102,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1838885655019520",
+      "id": 1
+    },
+    {
+      "albumId": 101,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7372627490373632",
+      "id": 2
+    },
+    {
+      "albumId": 101,
+      "url": "https://loremflickr.com/150/150/abstract?lock=8932581523324928",
+      "id": 4
+    },
+    {
+      "albumId": 101,
+      "url": "https://loremflickr.com/150/150/abstract?lock=6560140480217088",
+      "id": 6
+    }
+  ]
 }

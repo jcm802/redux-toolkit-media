@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { fetchUsers, addUser } from "../store";
-import Button from './Button';
-import { UserState } from "../types/media";
-import Skeleton from "./Skeleton";
-import useThunk from "../hooks/useThunk";
+import { fetchUsers, addUser } from "../../store";
+import Button from '../Button';
+import { UserState } from "../../types/media";
+import Skeleton from "../Skeleton";
+import useThunk from "../../hooks/useThunk";
 import UsersListItem from "./UsersListItem";
 
 export default function UsersList() {
@@ -51,7 +51,7 @@ export default function UsersList() {
                 onClick={handleUserAdd}
                 loading={isCreatingUser}
               >
-                + Add User
+                <>+ Add User</>
               </Button>
               {Object.keys(creatingUserError).length ? 'Error creating user...' : null}
       </div>

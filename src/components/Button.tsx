@@ -2,7 +2,7 @@ import className from 'classnames';
 import { GoSync } from 'react-icons/go';
 
 interface IButtonProps {
-  children: any;
+  children: JSX.Element;
   onClick: () => void;
   primary?: boolean;
   secondary?: boolean;

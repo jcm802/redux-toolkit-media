@@ -1,11 +1,10 @@
-import React from 'react';
-import { User } from '../types/media';
+import { User } from '../../types/media';
 import { GoTrash } from 'react-icons/go';
-import { removeUser } from '../store';
-import useThunk from '../hooks/useThunk';
-import Button from './Button';
-import ExpandablePanel from './ExpandablePanel';
-import AlbumsList from './AlbumsList';
+import { removeUser } from '../../store';
+import useThunk from '../../hooks/useThunk';
+import Button from '../Button';
+import ExpandablePanel from '../ExpandablePanel';
+import AlbumsList from '../Albums/AlbumsList';
 
 interface IUsersListItemProps {
     user: User;

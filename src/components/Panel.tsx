@@ -1,6 +1,11 @@
 import classNames from 'classnames';
 
-function Panel({ children, className, ...rest }) {
+interface IPanelProps {
+  children: JSX.Element;
+  className: string;
+}
+
+function Panel({ children, className, ...rest }: IPanelProps) {
   const finalClassNames = classNames(
     'border rounded p-3 shadow bg-white w-full',
     className

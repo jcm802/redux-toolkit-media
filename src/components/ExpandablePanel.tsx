@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 
 interface IExpandablePanel {
